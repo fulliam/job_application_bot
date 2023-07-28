@@ -1,0 +1,6 @@
+requests
+difflib
+webbrowser
+psycopg2
+python-dotenv
+scikit-learn
