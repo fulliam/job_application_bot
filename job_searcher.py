@@ -8,6 +8,7 @@ import psycopg2
 from termcolor import colored
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
+import pyautogui
 
 class JobSearchBot:
     def __init__(self, resume, vacancies, skip_words, similarity_threshold, table_name):
@@ -114,6 +115,8 @@ class JobSearchBot:
                                 self.store_vacancy(vacancy_item['id'])
                                 webbrowser.open(apply_url)
                                 time.sleep(7)
+                                pyautogui.hotkey('ctrl', 'w')
+                                
                     else:
                         continue
                 except requests.exceptions.RequestException:

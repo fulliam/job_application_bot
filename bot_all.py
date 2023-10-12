@@ -7,7 +7,7 @@ vacancies = ["fullstack", "frontend", "backend", "python", "vue", "бэкэнд"
 # Исключение слов из названий и описаний вакансий
 skip_words = ["php", "laravel", "c#", "c++", "senior", "java", "react", "angular", "node.js", ".net", "ruby"]
 # Среднее арифметическое между векторым и последовательным сравнением resume и описанием вакансии
-similarity_threshold = 0.20
+similarity_threshold = 0.18
 # Перезапуск поиска через 1200 секунд
 pause_duration = 1200
 # Название таблицы для этого поиска
